@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BITEBOX</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      background: linear-gradient(to right, gold, black);
+      padding: 40px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-size: 64px;
+      color: goldenrod;
+      text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+      text-shadow: 0 0 10px gold;
+    }
+    .content {
+      max-width: 1100px;
+      margin: 60px auto;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #d2691e;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .offer {
+      background: linear-gradient(90deg, gold, orange);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 700px;
+      text-align: center;
+      color: #000;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      animation: pulse 2s infinite alternate;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery img {
+      border-radius: 10px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      bottom: 0;
+      z-index: 1000;
+      width: 100%;
+      position: fixed;
+      margin-top: 60px;
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h2>BITEBOX</h2>
+    <nav>
+      <ul>
+        <li><a href="food.html">Menu</a></li>
+        <li><a href="about.html">Administration</a></li>
+        <li><a href="review.html">Reviews</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="card-container">
+      <div class="card">
+        <a href="food.html">
+          <h3>Menu</h3>
+          <p>Explore our delicious menu filled with local and global flavors.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="tablebooking.html">
+          <h3>Book a Table</h3>
+          <p>Reserve your seat in advance for a smooth dining experience.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Opening Hours</h3>
+        <p><b>Weekdays:</b> 9 AM – 10 PM</p>
+        <p><b>Weekends:</b> Open 24 Hours</p>
+      </div>
+    </div>
+
+    <div class="offer">
+      🎉 30% OFF this weekend for pre-booked customers! 🎉
+    </div>
+    <div class="gallery">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1619135748199-I56FXBEVWXC1QXGK17BZ/Apr+11+2021DSC07442.jpg?format=2500w" width="100%" alt="Restaurant Interior">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1566963493871-ETXLCH49FLZUB3A0Y1QT/yangskitchen_01.png?format=1000w" width="500px" alt="Dish 1">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1566964014153-2JAH31CL236V51TSY4SW/yangskitchen_02.png?format=1000w" width="500px" alt="Dish 2">
+    </div>
+  </div>
+
+  <footer>
+    DESIGNED AND DEVELOPED BY BHUVANESHWARAN TU
+  </footer>
+
+</body>
+</html>

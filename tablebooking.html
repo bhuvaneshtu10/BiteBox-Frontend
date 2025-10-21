@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #f5deb3, #deb887);
+        font-family: 'Poppins', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .book {
+        background: #fff;
+        padding: 40px 35px;
+        border-radius: 16px;
+        width: 350px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        animation: fadeIn 0.6s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .book h2 {
+        text-align: center;
+        color: #5a3d2b;
+        margin-bottom: 25px;
+      }
+
+      .input-box {
+        margin-bottom: 18px;
+      }
+
+      .input-box label {
+        display: block;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 6px;
+      }
+
+      .input-box input,
+      .input-box textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: border-color 0.3s ease;
+      }
+
+      .input-box input:focus,
+      .input-box textarea:focus {
+        outline: none;
+        border-color: #d2691e;
+      }
+
+      textarea {
+        resize: both;
+        min-height: 80px;
+      }
+      .book button {
+        width: 100%;
+        background-color: #d2691e;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .book button:hover {
+        background-color: #a0522d;
+      }
+
+      @media (max-width: 480px) {
+        .book {
+          width: 90%;
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="book">
+      <h2>🍴 Book a Table</h2>
+
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="input-box">
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter your last name" required>
+      </div>
+
+      <div class="input-box">
+        <label>Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-box">
+        <label>Time</label>
+        <input type="time" required>
+      </div>
+
+      <div class="input-box">
+        <label>Number of Guests</label>
+        <input type="number" min="1" max="20" required>
+      </div>
+
+      <div class="input-box">
+        <label>Special Requests</label>
+        <textarea placeholder="Any special instructions..."></textarea>
+      </div>
+
+      <button type="button" onclick="reserveTable()">Reserve Table</button>
+    </div>
+
+    <script>
+      function reserveTable() {
+        alert("✅ Your table has been reserved successfully!");
+      }
+    </script>
+  </body>
+</html>

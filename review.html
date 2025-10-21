@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BITEBOX | Reviews</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      background: linear-gradient(to right, gold, black);
+      color: goldenrod;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      z-index: 1000;
+    }
+    .container {
+      margin-top: 120px;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            color: black;
+            background: gold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+    }
+
+    a:hover {
+      color: goldenrod;
+      background-color: chocolate;
+    }
+
+    h3 {
+      color: #fff;
+      background-color: black;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    h3:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .review {
+      margin-top: 20px;
+    }
+
+    .r {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .r:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .r p {
+      font-size: 16px;
+      color: #333;
+      margin: 8px 0;
+    }
+
+    .r h4 {
+      margin-top: 5px;
+      color: #555;
+      font-style: italic;
+    }
+    fieldset {
+      border-radius: 10px;
+      border: 2px solid goldenrod;
+      padding: 20px;
+      margin-top: 40px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    legend {
+      color: goldenrod;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background: linear-gradient(to right, gold, black);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: goldenrod;
+    }
+    textarea{
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;;
+      width: 100%;
+    }
+    footer {
+      bottom: 0;
+      z-index: 1000;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      background-color: black;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>BITEBOX Reviews</h1>
+
+  <div class="container">
+    <a href="mainmenu.html">Back to Home</a>
+    <hr>
+
+    <fieldset>
+      <legend>Write a Review</legend>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required>
+
+        <label>Review</label>
+        <textarea>Write your review here</textarea>
+
+        <label>Rating</label>
+        <input type="text" placeholder="⭐ (1-5)" required>
+
+        <input type="submit" value="Submit Review">
+      </form>
+    </fieldset>
+  </div>
+
+  <footer>
+    © 2025 BITEBOX Restaurant. All Rights Reserved.
+  </footer>
+</body>
+</html>
