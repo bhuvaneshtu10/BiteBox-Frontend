@@ -26,7 +26,7 @@ Built with simplicity and performance in mind, this frontend is perfect for demo
 
 ---
 
-## Screenshots
+## Sample screenshots
 <img width="1919" height="1158" alt="Screenshot 2025-10-20 182839" src="https://github.com/user-attachments/assets/87d7fe38-0768-4f69-a8c9-0e9713570b97" />
 <img width="1919" height="1157" alt="Screenshot 2025-10-20 182854" src="https://github.com/user-attachments/assets/1b0bda6a-030d-4d88-b281-7737adf5a230" />
 <img width="1919" height="1149" alt="Screenshot 2025-10-20 182904" src="https://github.com/user-attachments/assets/272a17fc-5340-4bd9-a46b-c797f4c5b0d8" />
